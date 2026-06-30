@@ -26,6 +26,9 @@ Copy-Item -Path (Join-Path $ProjectDir "extension") -Destination (Join-Path $Sta
 Copy-Item -Path (Join-Path $ProjectDir "server") -Destination (Join-Path $StagingDir "server") -Recurse -Exclude ".venv", "__pycache__"
 Copy-Item -Path (Join-Path $ProjectDir "README.md") -Destination $StagingDir
 Copy-Item -Path (Join-Path $ProjectDir "INSTALLA_COLLEGHE.md") -Destination $StagingDir
+Copy-Item -Path (Join-Path $ProjectDir "ISTRUZIONI_RAPIDE_COLLEGHE.md") -Destination $StagingDir
+Copy-Item -Path (Join-Path $ProjectDir "INSTALLA.bat") -Destination $StagingDir
+Copy-Item -Path (Join-Path $ProjectDir "AVVIA_WHISPER.bat") -Destination $StagingDir
 
 $VenvInStaging = Join-Path $StagingDir "server\.venv"
 if (Test-Path $VenvInStaging) {
