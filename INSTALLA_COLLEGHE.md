@@ -14,7 +14,11 @@ This guide installs the current office version.
 
 ## Installazione rapida / Quick install
 
-1. Estrai lo ZIP in una cartella stabile, ad esempio:
+1. Da GitHub, clicca **Code** -> **Download ZIP**.
+
+   From GitHub, click **Code** -> **Download ZIP**.
+
+2. Estrai lo ZIP in una cartella stabile, ad esempio:
 
    Extract the ZIP into a stable folder, for example:
 
@@ -22,11 +26,11 @@ This guide installs the current office version.
    C:\WhatsappVoiceTranscriber
    ```
 
-2. Apri PowerShell dentro quella cartella.
+3. Apri PowerShell dentro quella cartella.
 
    Open PowerShell inside that folder.
 
-3. Esegui:
+4. Esegui:
 
    Run:
 
@@ -36,7 +40,7 @@ This guide installs the current office version.
    .\server\status.ps1
    ```
 
-4. Controlla che appaia:
+5. Controlla che appaia:
 
    Check that you see:
 
@@ -44,7 +48,7 @@ This guide installs the current office version.
    OK - Servizio Whisper raggiungibile
    ```
 
-5. Apri Chrome e vai su:
+6. Apri Chrome e vai su:
 
    Open Chrome and go to:
 
@@ -52,15 +56,15 @@ This guide installs the current office version.
    chrome://extensions
    ```
 
-6. Attiva **Modalità sviluppatore**.
+7. Attiva **Modalità sviluppatore**.
 
    Enable **Developer mode**.
 
-7. Clicca **Carica estensione non pacchettizzata**.
+8. Clicca **Carica estensione non pacchettizzata**.
 
    Click **Load unpacked**.
 
-8. Seleziona la cartella:
+9. Seleziona la cartella:
 
    Select the folder:
 
@@ -68,7 +72,7 @@ This guide installs the current office version.
    extension
    ```
 
-9. Apri o ricarica:
+10. Apri o ricarica:
 
    Open or reload:
 
@@ -76,7 +80,7 @@ This guide installs the current office version.
    https://web.whatsapp.com
    ```
 
-10. Apri una chat con vocali visibili. La trascrizione dovrebbe comparire sotto il vocale.
+11. Apri una chat con vocali visibili. La trascrizione dovrebbe comparire sotto il vocale.
 
     Open a chat with visible voice notes. The transcription should appear under the voice note.
 
