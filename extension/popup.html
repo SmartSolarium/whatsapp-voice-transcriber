@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trascrizione vocali</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <h1>Trascrizione vocali</h1>
+      <label class="toggle"><input id="enabled" type="checkbox"> Attiva su WhatsApp Web</label>
+      <label>Lingua
+        <select id="language">
+          <option value="it">Italiano</option>
+          <option value="auto">Rilevamento automatico</option>
+          <option value="en">Inglese</option>
+        </select>
+      </label>
+      <label>Motore trascrizione
+        <select id="provider">
+          <option value="local">Whisper locale</option>
+          <option value="openai">OpenAI API</option>
+        </select>
+      </label>
+      <label id="localSettings">Servizio locale
+        <input id="serverUrl" type="url" value="http://127.0.0.1:8765">
+      </label>
+      <section id="openaiSettings" hidden>
+        <label>OpenAI API key
+          <input id="openaiApiKey" type="password" autocomplete="off" placeholder="sk-...">
+        </label>
+        <label>Modello OpenAI
+          <input id="openaiModel" type="text" value="gpt-4o-mini-transcribe">
+        </label>
+        <p class="hint">Con OpenAI attivo, l'audio dei vocali visibili viene inviato all'API OpenAI.</p>
+      </section>
+      <button id="check" type="button">Verifica</button>
+      <p id="status" role="status"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
